@@ -11,7 +11,16 @@ const CarItem = () => {
       <View style={styles.titles}>
         <Text style={styles.title}>Model S</Text>
         <Text style={styles.subtitle}>Starting at $69,420</Text>
-        <StyledButton type="secondary" />
+        <StyledButton
+          type="primary"
+          content={'custom order'}
+          onPress={() => console.warn('primary button pressed')}
+        />
+        <StyledButton
+          type="secondary"
+          content={'existing inventory'}
+          onPress={() => console.warn('secondary button pressed')}
+        />
       </View>
     </View>
   );
