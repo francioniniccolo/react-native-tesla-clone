@@ -1,11 +1,12 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import CarItem from './components/CarItem';
-
+import img from './assets/images/ModelX.jpeg';
+import CarsList from './components/CarsList';
 const App = () => {
   return (
     <View style={styles.container}>
-      <CarItem />
+      <CarsList />
     </View>
   );
 };
